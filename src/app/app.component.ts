@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
           let jsDate = new Date(eachDate * 1000);
           weatherDates.push(jsDate.toLocaleTimeString('en', {year: 'numeric', month: 'short', day: 'numeric'}));
         });
-        this.chart = new Chart('canvas', {
+        this.chart = new Chart('canvasId', {
           type: 'line',
           data: {
             labels: weatherDates,
